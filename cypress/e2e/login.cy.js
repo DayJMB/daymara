@@ -1,4 +1,5 @@
-describe("Login", () => {     
+describe("Login", () => {  
+
   it ('Login exitoso', ()=>{
 cy.visit("https://www.netflix.com/")
 cy.get('[id="signIn"]').click()
@@ -9,4 +10,8 @@ cy.get('#id_password')
 cy.get('[class="btn login-button btn-submit btn-small"]').click()
 cy.contains('¿Quién está viendo ahora?').should('be.visible') 
 })
+})
+
+it('URL should be https://www.netflix.com/',function(){
+
 })
